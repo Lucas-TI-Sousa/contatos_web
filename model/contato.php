@@ -14,6 +14,26 @@ class Contato
         $this->telefone = $telefone;
         $this->email = $email;
     }
+
+    public function getNome()
+    {
+        return $this->nome;
+    }
+
+    public function getTelefone()
+    {
+        return $this->telefone;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function __toString()
+    {
+        return "Nome: {$this->nome}, telefone: {$this->telefone}, email: {$this->email}";
+    }
 }
 
 ?>

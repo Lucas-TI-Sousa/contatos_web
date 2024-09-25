@@ -23,7 +23,7 @@ class Database
         {
             self::$instace = new Database();
         }
-        
+
         return self::$instace;
     }
 

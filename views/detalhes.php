@@ -16,8 +16,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         {
             $contato = $contatoDAO->getById($_POST['id']);
             $contato->setNome($_POST['nome']);
-            $contato->setNome($_POST['telefone']);
-            $contato->setNome($_POST['email']);
+            $contato->setTelefone($_POST['telefone']);
+            $contato->setEmail($_POST['email']);
 
             $contatoDAO->update($contato);
         } else {

@@ -7,7 +7,6 @@ class Contato
     private $telefone;
     private $email;
 
-
     public function __construct($id, $nome, $telefone, $email)
     {
         $this->id = $id;
